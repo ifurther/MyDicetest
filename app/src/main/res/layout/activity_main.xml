@@ -30,9 +30,10 @@
 
     <TextView
         android:id="@+id/textV2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="98dp"
+        android:layout_height="34dp"
         android:text="@string/dice_no"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.414"
@@ -45,25 +46,27 @@
         android:layout_width="91dp"
         android:layout_height="36dp"
         android:text="@string/app_button_2"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toEndOf="@+id/editTextNumberSigned"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
+        app:layout_constraintVertical_bias="0.715" />
 
     <EditText
         android:id="@+id/editTextNumberSigned"
-        android:layout_width="39dp"
-        android:layout_height="23dp"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
         android:layout_marginStart="8dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="numberSigned"
         android:text="@string/defaultdiceno"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textV2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
+        app:layout_constraintVertical_bias="0.715" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
