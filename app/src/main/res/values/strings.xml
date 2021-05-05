@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Dice test</string>
+    <string name="app_button_1">ROll</string>
+    <string name="Toast_1">Dice Rolled!</string>
+    <string name="dice_no">Dice no. is </string>
+    <string name="app_button_2">Change</string>
+    <string name="defaultdiceno" translatable="false">1</string>
+</resources>
