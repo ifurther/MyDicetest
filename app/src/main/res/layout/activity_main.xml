@@ -30,7 +30,7 @@
 
     <TextView
         android:id="@+id/textV2"
-        android:layout_width="98dp"
+        android:layout_width="wrap_content"
         android:layout_height="34dp"
         android:text="@string/dice_no"
         android:textSize="18sp"
@@ -56,13 +56,14 @@
 
     <EditText
         android:id="@+id/editTextNumberSigned"
+        style="@style/Widget.AppCompat.EditText"
         android:layout_width="46dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/default_dice_no"
         android:inputType="numberSigned"
-        android:text="@string/defaultdiceno"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textV2"

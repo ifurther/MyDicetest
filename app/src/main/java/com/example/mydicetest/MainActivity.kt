@@ -21,12 +21,14 @@ class MainActivity : AppCompatActivity() {
         }
         var changeSides: Button = findViewById(R.id.button2)
         changeSides.setOnClickListener {
+            val toast = Toast.makeText(this, R.string.Toast_2, Toast.LENGTH_SHORT)
+            toast.show()
             val textNo: EditText = findViewById(R.id.editTextNumberSigned)
             numSides = textNo.text.toString().toIntOrNull()?.times(6)!!
         }
     }
 
-    private fun rollDice(numSides: Int) {
+    private fun rollDice(numSides: Int=6) {
         val dice = Dice(numSides)
         val diceRoll = dice.roll()
 
