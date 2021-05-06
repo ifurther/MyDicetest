@@ -3,5 +3,8 @@
     <string name="app_name">My Dice test</string>
     <string name="app_button_1">骰</string>
     <string name="app_button_2">更改</string>
+    <string name="Toast_1">已骰骰子</string>
+    <string name="Toast_2">骰子數已改變</string>
+    <string name="Toast_3">骰子數輸入錯誤</string>
     <string name="dice_no">骰子數</string>
 </resources>

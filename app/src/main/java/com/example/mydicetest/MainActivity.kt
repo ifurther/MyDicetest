@@ -21,10 +21,17 @@ class MainActivity : AppCompatActivity() {
         }
         var changeSides: Button = findViewById(R.id.button2)
         changeSides.setOnClickListener {
+
+            val textNo: EditText = findViewById(R.id.editTextNumberSigned)
+            val newSides = textNo.text.toString().toIntOrNull()
+            if ( newSides == null ) {
+                val toast = Toast.makeText(this, R.string.Toast_3, Toast.LENGTH_SHORT)
+                toast.show()
+                return
+            } else {
             val toast = Toast.makeText(this, R.string.Toast_2, Toast.LENGTH_SHORT)
             toast.show()
-            val textNo: EditText = findViewById(R.id.editTextNumberSigned)
-            numSides = textNo.text.toString().toIntOrNull()?.times(6)!!
+            numSides = newSides.times(6)!!
         }
     }
 
